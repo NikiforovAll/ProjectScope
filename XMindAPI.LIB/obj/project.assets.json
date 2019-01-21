@@ -1,0 +1,57 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.5": {},
+    ".NETFramework,Version=v4.5/win": {},
+    ".NETFramework,Version=v4.5/win-x64": {},
+    ".NETFramework,Version=v4.5/win-x86": {}
+  },
+  "libraries": {},
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.5": []
+  },
+  "packageFolders": {
+    "C:\\Users\\HYS\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Nikiforov\\dev\\ProjectScope\\XMindAPI.LIB\\XMindAPI.LIB.csproj",
+      "projectName": "XMindAPI.LIB",
+      "projectPath": "C:\\Nikiforov\\dev\\ProjectScope\\XMindAPI.LIB\\XMindAPI.LIB.csproj",
+      "packagesPath": "C:\\Users\\HYS\\.nuget\\packages\\",
+      "outputPath": "C:\\Nikiforov\\dev\\ProjectScope\\XMindAPI.LIB\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\HYS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net45"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net45": {
+          "projectReferences": {}
+        }
+      }
+    },
+    "frameworks": {
+      "net45": {}
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}

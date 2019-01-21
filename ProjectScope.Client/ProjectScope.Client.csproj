@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <!-- <ProjectReference Include="ProjectScope.Client.csproj" /> -->
+    <ProjectReference Include="..\XMindAPI.LIB\XMindAPI.LIB.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="linqtoexcel" Version="1.11.0" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net45</TargetFramework>
+  </PropertyGroup>
+
+</Project>

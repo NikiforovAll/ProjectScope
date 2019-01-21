@@ -1,0 +1,6 @@
+C:\Nikiforov\dev\ProjectScope\XMindAPI.LIB\bin\Debug\XMindAPI.LIB.dll
+C:\Nikiforov\dev\ProjectScope\XMindAPI.LIB\bin\Debug\XMindAPI.LIB.pdb
+C:\Nikiforov\dev\ProjectScope\XMindAPI.LIB\obj\Debug\XMindAPI.LIB.csprojAssemblyReference.cache
+C:\Nikiforov\dev\ProjectScope\XMindAPI.LIB\obj\Debug\XMindAPI.LIB.csproj.CoreCompileInputs.cache
+C:\Nikiforov\dev\ProjectScope\XMindAPI.LIB\obj\Debug\XMindAPI.LIB.dll
+C:\Nikiforov\dev\ProjectScope\XMindAPI.LIB\obj\Debug\XMindAPI.LIB.pdb
