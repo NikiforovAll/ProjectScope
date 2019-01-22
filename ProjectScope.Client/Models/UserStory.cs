@@ -14,5 +14,9 @@ namespace ProjectScope.Client.Models
         [ExcelColumn("ZEB nr")]
         public string Reference { get; set; }
         public string Scope { get; set; }
+        [ExcelColumn("Additional comments")]
+        public string Comments { get; set; }
+        [ExcelColumn("Depends On ")]
+        public string DependsOn { get; set; }
     }
 }

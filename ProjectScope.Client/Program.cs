@@ -32,10 +32,32 @@ namespace ProjectScope.Client
                 entry.Value.ForEach(userStory =>
                     {
                         var userStoryTopicId = book.AddTopic(currentTopicId, $"{userStory.Reference}: {userStory.Name}");
-                        //book.AddUserTag(userStoryTopicId, userStory.Reference, $"{jiraBaseUrl}{userStory.Reference}");
+                        book.AddUserTag(userStoryTopicId, userStory.Reference, userStory.Reference);
+                        // add label
                         book.AddLabel(userStoryTopicId, $"{jiraBaseUrl}{userStory.Reference}");
+                        // add comments
+                        if (!String.IsNullOrEmpty(userStory.Comments))
+                        {
+                            foreach (var item in userStory.Comments.Split(new string[] { "\n" }, StringSplitOptions.RemoveEmptyEntries))
+                            {
+                                book.AddTopic(userStoryTopicId, item);
+                            }
+                        }
                     }
                 );
+            }
+            foreach (UserStory story in data.Values.SelectMany(l => l.AsEnumerable()))
+            {
+                if (!String.IsNullOrEmpty(story.DependsOn))
+                {
+                    foreach(var parent in story.DependsOn.Split(','))
+                    {
+                        book.AddTopicLink(
+                            book.GetTopicIdsByUserTagValue(story.Reference, story.Reference).FirstOrDefault(),
+                            book.GetTopicIdsByUserTagValue(parent, parent).FirstOrDefault()
+                        );
+                    }
+                }
             }
         }
 
@@ -55,4 +77,3 @@ namespace ProjectScope.Client
         }
     }
 }
-    
